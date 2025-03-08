@@ -6,6 +6,7 @@
     top: 0;
     left: 0;
     z-index: -2;
+    background-size: cover; /* Ensures proper scaling */
 }
 
 #animated-background img {
@@ -24,6 +25,8 @@ body {
     overflow: hidden;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;  /* Prevents horizontal scroll */
+    overflow-y: auto;    /* Enables vertical scrolling */
 }
 
 /* 🚀 Navbar */
@@ -121,6 +124,7 @@ nav {
     text-align: center;
     padding: 20px;
     box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+    cursor: pointer; /* Indicate interactivity */
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
@@ -183,4 +187,3 @@ nav {
     left: 50%;
     transform: translateX(-50%); /* Centers it */
 }
-
